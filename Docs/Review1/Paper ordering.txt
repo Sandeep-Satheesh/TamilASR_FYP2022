@@ -1,0 +1,4 @@
+1 - Deep Speech
+2- Manipuri
+3- German
+4- building large corpus

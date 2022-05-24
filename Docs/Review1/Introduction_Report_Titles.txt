@@ -1,0 +1,4 @@
+objective
+need/motivation
+generic information (optional)
+scope

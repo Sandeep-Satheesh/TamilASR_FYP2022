@@ -1,0 +1,10 @@
+SPLIT OF PPT
+
+slide1- title->Vidhya
+slide2->PS ->Sandeep
+slide3->Vidhya
+slide4->Literature survey->split between both
+slide5->challenges->1,2(Vidhya) , 3,4(Sandeep)
+slide6->Objectives->1(Sandeep), 2(Vidhya)
+slide8->Train modelA->1,2(Vidhya), 3,4(Sandeep)
+slide9->same as 8
