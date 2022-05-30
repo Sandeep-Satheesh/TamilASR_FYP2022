@@ -1,15 +1,17 @@
 <template>
   <div id="card">
     <!-- <v-file-input truncate-length="15"></v-file-input> -->
-    <form action="http://7d5a-35-236-196-195.ngrok.io/" method="POST">
+    <iframe name="hiddenFrame" class="hide"></iframe>
+    <form action="http://localhost:5000/" enctype = "multipart/form-data" method="POST" target="hiddenFrame">
       <label id="header">Upload Tamil Audio</label><br>
-      <input id="fileUpload" type="file" ref="fileupload" accept="audio/*" />
+      <input id="fileUpload" name="fileUpload" type="file" accept="audio/*" />
       <input
         id="deleteIcon"
         type="image"
         :src="require('./delete.png')"
         @click="resetFile()"
       />
+      
       <button type="submit">Get Transcript</button>
     </form>
   </div>
