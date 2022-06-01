@@ -1,44 +1,62 @@
 <template>
-  <div id="parent">
+  <div id="mainparent">
+    <div id="introduction">
     <div id="headingmain">Transcribe Tamil</div>
     <div id="p1">Save time transcribing your Tamil audio to text.</div>
     <div id="p2">
       Create accurate transcripts easily with our Tamil transcription service!!
     </div>
-    <!-- <v-file-input truncate-length="15"></v-file-input> -->
     <img id="transcriptionimg" :src="require('./transcription.png')" />
-    <button id="transcribeBtn">Get Transcript</button>
-    <!-- <div id="stepsCard"> -->
-    <!-- <TranscriptionSteps/> -->
-    <!-- </div> -->
-  </div>
+    <div>
+      <!-- <router-link to="/FileUpload">Clothes</router-link> -->
+    <!-- <a href="FileUpload">Click</a> -->
+      <button id="transcribeBtn"  @click="fn()">Get Transcript</button>
+      
+    <!-- <router-view></router-view> -->
+    </div>
+    </div>
+    <TranscriptionSteps/>
+    <Features/>
+    </div>
 </template>
 
 <script>
-// import TranscriptionSteps from './TranscriptionSteps.vue';
+import TranscriptionSteps from './TranscriptionSteps.vue';
+import Features from './Features.vue';
+
 export default {
-  // components: {TranscriptionSteps},
+ 
+  components: {TranscriptionSteps,Features},
   name: "IntroductionSection",
+  methods:{
+    fn(){
+
+    }
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#parent{
-  overflow-y: scroll;
+#introduction{
+  margin-left: 380px;
+  /* border:solid 1px */
 }
 #headingmain {
-  position: fixed;
-  top: 10%;
-  left: 34%;
+  /* position: fixed; */
+  margin-left:110px;
   font-size: 50px;
   font-weight: bolder;
 }
+#mainparent{
+  background-color: rgb(255, 253, 253);
+}
 #transcribeBtn {
-  position: fixed;
-  top: 55%;
-  left: 38%;
+  /* margin-top:80px;
+  margin-left: 0px; */
+  margin-top:40px;
   width: 250px;
+  margin-left:150px;
   border-radius: 8px;
   font-size: 20px;
   height: 70px;
@@ -47,26 +65,19 @@ export default {
   font-weight: 600;
 }
 #transcriptionimg {
-  position: fixed;
-  top: 32%;
-  left: 26%;
+  /* position: fixed; */
+  /* top: 32%;
+  left: 26%; */
+  margin-top:30px;
+  margin-right:40px;
 }
-/* #p1{
-   left:10%;
-} */
+#p1{
+   margin-left:120px;
 
-#p1 {
-  position: fixed;
-  font-size: 18px;
-  top: 22%;
-  left: 35%;
-  color: grey;
 }
-#p2 {
-  position: fixed;
-  font-size: 18px;
-  top: 25%;
-  left: 28%;
-  color: grey;
+#p2{
+   margin-left:50px;
+
 }
+
 </style>

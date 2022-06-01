@@ -1,21 +1,21 @@
 <template>
   <div id="card">
-   <div id="cardTitle">How to Transcribe Tamil Audio to Text</div>
+   <div id="cardTitle">Features</div>
    <div id="container">
   <div id="section1">
-    <img id="uploadAudio" :src="require('./upload_audio.png')" /><br>
-    <div id="section1Title">Upload Tamil Audio File</div>
-    <div id="section1desc">Click on 'Choose File' and select your audio from your folders </div>
+    <img id="uploadAudio" :src="require('./opensource.png')" /><br>
+    <div id="section1Title">Fully Open-Source</div>
+    <div id="section1desc">All components used are open source</div>
     </div>
   <div id="section2">
-    <img id="clickBtn" :src="require('./click.png')" /><br>
-    <div id="section2Title">Get Transcript</div>
-    <div id="section2desc">Click on 'Get Transcript' button</div>
+    <img id="clickBtn" :src="require('./deepl.jpg')" /><br>
+    <div id="section2Title">Deep Learning Based</div>
+    <div id="section2desc">Levereging deep learning for accurate transcriptions</div>
   </div>
   <div id="section3">
-    <img id="tamilword" :src="require('./tamilword.png')" /><br>
+    <img id="tamilword" :src="require('./anytime.png')" /><br>
     <div id="section3Title">Transcript</div>
-    <div id="section3desc">Obtain accurate transcript</div>
+    <div id="section3desc">Available anytime, anywhere</div>
   </div>
   </div>
   </div>
@@ -121,7 +121,7 @@ export default {
 #cardTitle{
     font-size: 30px;
     font-weight: 600;
-    margin-left: 30%;
+    margin-left: 45%;
     padding-Top:1.5%;
 }
 </style>
