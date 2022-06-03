@@ -14,6 +14,17 @@
   padding: 0.5%;
   border: 1px solid rgb(236, 64, 6);
 }
+
+#pbLoading {
+  background: rgba(0,0,0,0.5) url('http://i.imgur.com/HEAD5PU.gif') center no-repeat;
+  position: fixed;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  height:100%;
+  width:100%;
+}
+
 #transcriptframe{
   margin-left: 60px;
   margin-top:30px;
@@ -36,6 +47,21 @@
   height: 25px;
   /* margin-Left: 40%; */
 }
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 input[type="file"]::file-selector-button {
   border: 2px solid #6c5ce7;
   padding: 0.2em 0.4em;

@@ -1,5 +1,5 @@
 <div id="card">
-  <img src="assets/loading.gif" id="loading" *ngIf="showLoadingSymbol" style="position: absolute; z-index: 10; left: 45%; top: 15%; height:50px; width:50px">
+  <div id="pbLoading" *ngIf="showLoadingSymbol"></div>
   <!-- <v-file-input truncate-length="15"></v-file-input> -->
   <form action="http://localhost:5000/" enctype = "multipart/form-data" method="POST" target="hiddenFrame">
     <label id="header">Upload Tamil Audio</label><br>
